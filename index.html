@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <button onclick="incre()">+</button>
+        <button onclick="decre()">-</button>
+        <h1 id="show"></h1>
+    </main>
+</body>
+</html>
+<script>
+    let show = document.getElementById("show");
+    let how = 0
+    show.innerHTML = how
+
+    function incre() {
+        if (how == 10) {
+            return;
+        }
+        how++
+        show.innerHTML = how
+    }
+
+    function decre() {
+        if (how == 0) {
+            return;
+        }
+        how--
+        show.innerHTML = how
+    }
+</script>
